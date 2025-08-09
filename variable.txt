@@ -1,0 +1,29 @@
+in javascritp java scirpt 
+
+let a=20;
+a=30;
+console.log(a) it runs correclty re assign
+
+
+let a=20;
+let a=30;
+console.log(a) it shows error 
+
+var a=20;
+a=40; //Reassign
+console.log(a);
+
+var a=20;
+var a=40;  // Redeclare
+console.log(a);
+
+const a=20;
+console.log(a);
+
+const a=20;
+a=40;
+console.log(a) it shows error
+
+const a=20;
+const a=40;
+console.log(a) it shows error
