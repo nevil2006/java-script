@@ -1,0 +1,10 @@
+In java scirpt there two data types primtive and non primtive
+primtive data types
+    1. Number
+    2. string
+    3. boolean
+    4. Null
+    5. undefined
+non primtive data types
+    1. object
+    2. Array
