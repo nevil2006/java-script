@@ -24,7 +24,22 @@ for(num=1;num<=10;num=num+1){
 for(num=1;num<=10;num=num+2){
     console.log(num);   
 }
-//
+//for output as (10,9,8,7,6,5,4,3,2,1)
 for (num=10;num>=1;num=num-1){
     console.log(num);
+}
+//for output as (2,4,6,8,10)
+for (let i=1; i<=10; i++)
+    if(i%2==0){{
+    console.log(i);        
+    }
+    
+}
+//print table of 2
+for (let i = 1; i <= 10; i++) {
+    console.log(i + "*2=" + (i * 2));
+}
+//expontetial of 10
+for (let i = 1; i <= 10; i++) {
+    console.log("10**" + i + "=" + (10 ** i));
 }
