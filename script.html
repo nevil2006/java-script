@@ -1,10 +1,20 @@
-<!--excersise -->
-<h1 id ="title">
-    hello world
-</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise</title>
+</head>
+<body>
+    <h1 id="title">hello world</h1>
+    <button id="btn">Change</button> <!-- ✅ Button added -->
 
-<script>
-    var head=document.getElementById("title")
-    console.log(head.textContent);
-    head.textContent="bye world"
-</script>
+    <script>
+        var head = document.getElementById("title");
+        var btn = document.getElementById("btn");
+
+        // When button is clicked, change the text
+        btn.addEventListener("click", function () {
+            head.textContent = "bye world";
+        });
+    </script>
+</body>
+</html>
