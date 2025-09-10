@@ -2,25 +2,32 @@
 <input id="guessnumber" type="number" placeholder="Enter 0-9">
 <button onclick="check()">CHECK</button>
 <p id="result">YOU ARE WRONG/RIGHT</p>
-<P ID="SCORE"> SCORE:10l</P> 
+<p id="score">SCORE: 10</p> 
 
 <script>
-    // Input box
+    // Input box and elements
     var guessnumber = document.getElementById("guessnumber");
     var result = document.getElementById("result");
+    var score = document.getElementById("score");
 
-    // Generate random number between 0 and 9
+    // Starting values
     var randomNumber = Math.floor(Math.random() * 10);
-    Var score =document.getElementById("SCORE");
     var scoreValue = 10;
-
 
     // Function to check guess
     function check() {
         if (parseInt(guessnumber.value) === randomNumber) {
-            result.textContent = "YOU ARE RIGHT!";
+            result.textContent = " YOU ARE RIGHT!";
+            randomNumber = Math.floor(Math.random() * 10); // generate new number
         } else {
-            result.textContent = "DOU ARE WRONG! The number was " + randomNumber;
+            result.textContent = " YOU ARE WRONG! Try again.";
+            scoreValue--; // decrease score
+            score.textContent = "SCORE: " + scoreValue;
+        }
+
+        // Game over check
+        if (scoreValue <= 0) {
+            result.textContent = " GAME OVER!";
         }
     }
 </script>
