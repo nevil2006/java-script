@@ -1,0 +1,15 @@
+<h1 id="result">Name</h1>
+<button onclick="update(event)">John</button>
+<button onclick="update(event)">Mike</button>
+<button onclick="update(event)">Sara</button>
+
+<script>
+    // Select the h1
+    var h1 = document.getElementById("result");
+
+    function update(event) {
+        console.log(event); // shows the event details in console
+        h1.textContent = event.target.textContent; 
+        // changes h1 text to the button’s text
+    }
+</script>
