@@ -1,0 +1,24 @@
+<style>
+    div {
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        transition: 2s; /* smooth animation */
+    }
+
+    .widthnax {
+        width: 900px; /* smaller value so you can see */
+    }
+</style>
+
+<div id="box"></div>
+<button onclick="Change()">Change Color</button>
+
+<script>
+    var box = document.getElementById("box");
+
+    function Change() {
+        box.classList.toggle("widthnax");  
+        // Toggles the class (add if missing, remove if already present)
+    }
+</script>
