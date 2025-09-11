@@ -1,0 +1,15 @@
+<h1 onclick="deleteItem(event)">one</h1>
+<h1 onclick="deleteItem(event)">two</h1>
+<h1 onclick="deleteItem(event)">three</h1>
+<h1 onclick="deleteItem(event)">four</h1>
+<h1 onclick="deleteItem(event)">five</h1>
+<h1 onclick="deleteItem(event)">six</h1>
+
+<script>
+    // Correct way to assign variable
+
+    function deleteItem(event) 
+    {
+        event.target.remove(); // removes the <h1> element
+    }
+</script>
