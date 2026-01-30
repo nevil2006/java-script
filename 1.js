@@ -1,3 +1,5 @@
+const { act } = require("react");
+
 const employees = [
     {id:1, name: 'Alice', department: 'HR' ,Active:true},
     {id:2, name: 'Bob', department: 'Engineering',Active:false},
@@ -8,3 +10,20 @@ const employees = [
 ];
 const activeEmployees = employees.filter(e => e.Active === true);
 console.log(activeEmployees);
+
+console.log();
+
+
+console.log();
+const filteremployees=activeEmployees.map(e=>e.name);
+console.log(filteremployees);
+
+const findriya=activeEmployees.find(e=>e.name==='Alice');
+console.log(findriya);
+
+
+const emp1={id:6, name: 'Frank', department: 'Marketing',Active:true};
+const emp2={id:7, name: 'Grace', department: 'Finance',Active:false};
+
+employees.push(emp1,emp2);
+console.log(employees);
